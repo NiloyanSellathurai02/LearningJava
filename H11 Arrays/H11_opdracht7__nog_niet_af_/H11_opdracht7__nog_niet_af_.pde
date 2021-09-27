@@ -4,10 +4,9 @@ ControlP5 cp;
 
 
 String  [] arrayNamen = new String [10];
-String namen;
 
 
-Textfield TF1;
+Textfield TF;
 Button knop1;
 
 void setup(){
@@ -15,7 +14,7 @@ void setup(){
  
   cp = new ControlP5(this);
 
-TF1 = cp.addTextfield("TextField")
+TF = cp.addTextfield("TextField")
           .setText("Naam")
           .setSize(200,50)
           .setPosition(200,200)
@@ -31,5 +30,4 @@ void draw(){
   background(0,0,0);
 }
 void Knop(){
- namen = TF1.arrayNamen();
 }
